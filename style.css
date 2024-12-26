@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #00aaff, #0055cc);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#app {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.5s ease-out;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2980b9;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+#message {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #34495e;
+  font-weight: 500;
+}
+
+#inputs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#userInput {
+  padding: 15px;
+  font-size: 18px;
+  width: 60%;
+  margin-right: 10px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#userInput:focus {
+  border-color: #2980b9;
+  outline: none;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+#buttonContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  animation: slideUp 0.5s ease-out;
+}
+
+thead th {
+  background-color: #2980b9;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+}
+
+tbody td {
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody td:hover {
+  background-color: #f1f1f1;
+}
+
+.message-box {
+  font-size: 18px;
+  color: #e74c3c;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu de Devination</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Jeu de Devination</h1>
+    <div id="message" class="message-box"></div>
+    <div id="inputs">
+      <input id="userInput" type="text" placeholder="Entrez 4 chiffres..." maxlength="4" onkeypress="handleEnter(event)">
+      <button onclick="submitInput()">Valider</button>
+    </div>
+    <div id="choices">
+      <table>
+        <thead>
+          <tr>
+            <th>Étape</th>
+            <th>Votre choix</th>
+            <th>Choix de l'ordinateur</th>
+          </tr>
+        </thead>
+        <tbody id="choicesTableBody"></tbody>
+      </table>
+    </div>
+    <div id="result"></div>
+    <div id="buttonContainer"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
